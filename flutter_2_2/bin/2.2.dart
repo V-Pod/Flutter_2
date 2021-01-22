@@ -1,37 +1,39 @@
 void main() {
+  // findUser(name) {
+  //   List<Map<String, dynamic>> data = [
+  //     {"name": "Batman", "age": 30},
+  //     {"name": "Spiderman", "age": 18},
+  //     {"name": "Kung fury", "age": 23},
+  //     {"name": "Tor", "age": 550},
+  //     {"name": "Halk", "age": 44},
+  //     {"name": "Iron man", "age": 35},
+  //   ];
 
-  List<Map<String, dynamic>> data = [
+  //   data.forEach((hero) {
+  //     if (hero['name'] == name) {
+  //       print(hero);
+  //     }
+  //   });
+  // }
 
-    {"name": "Batman", "age": 30},
+  // findUser('Tor');
 
-    {"name": "Spiderman", "age": 18},
-
-    {"name": "Kung fury", "age": 23},
-
-    {"name": "Tor", "age": 550},
-
-    {"name": "Halk", "age": 44},
-
-    {"name": "Iron man", "age": 35},
-
-  ];
-
-  Map<String, dynamic> findUser({List<Map<String, dynamic>> data, String name}) {
-
-    if (key in List) {
-
-    }
-
-    else{
-
-      print
-
-    }
-
+  findUser(data, name) {
+    data.forEach((hero) {
+      if (hero['name'] == name) {
+        print(hero);
+      }
+    });
   }
 
-  var hero = findUser(data, 'Iron man');
+  List<Map<String, dynamic>> data = [
+    {"name": "Batman", "age": 30},
+    {"name": "Spiderman", "age": 18},
+    {"name": "Kung fury", "age": 23},
+    {"name": "Tor", "age": 550},
+    {"name": "Halk", "age": 44},
+    {"name": "Iron man", "age": 35},
+  ];
 
-  print(hero);
-
+  findUser(data, 'Batman');
 }
